@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { animate, createTimeline, random, stagger } from "animejs";
+import { DownloadIcon, GithubIcon } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 export const Route = createFileRoute("/")({ component: App });
@@ -137,7 +138,7 @@ function App() {
 						rel="noopener noreferrer"
 						className="bg-cyan-500 hover:bg-cyan-600 px-6 py-2 rounded-md font-medium transition inline-flex items-center gap-2"
 					>
-						<img src="download.png" alt="Download" className="h-5 w-5" />
+						<DownloadIcon size={20} />
 						Download
 					</a>
 					<a
@@ -146,7 +147,7 @@ function App() {
 						rel="noopener noreferrer"
 						className="bg-[#1a1d23] hover:bg-[#22262d] px-6 py-2 rounded-md font-medium transition border border-white/10 inline-flex items-center gap-2"
 					>
-						<img src="github.png" alt="GitHub" className="h-5 w-5" />
+						<GithubIcon size={20} />
 						Source Code
 					</a>
 				</div>
