@@ -34,6 +34,16 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 		<html lang="en">
 			<head>
 				<HeadContent />
+				<meta name="og:title" content="Void modding" />
+				<meta name="og:description" content="The new home of modding (maybe)" />
+				<meta name="og:url" content="https://voidmodding.org" />
+
+				<meta name="twitter:title" content="Void modding" />
+				<meta
+					name="twitter:description"
+					content="The new home of modding (maybe)"
+				/>
+				<meta name="twitter:url" content="https://voidmodding.org" />
 			</head>
 			<body>
 				{children}
